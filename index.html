@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Grapple</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://esm.sh/three@0.160.0",
+                "three/addons/": "https://esm.sh/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="game-container"></div>
+    
+    <div id="ui-layer">
+        <div id="score-display">DISTANCE: 0m</div>
+        <div id="grapple-display">GRAPPLES: 0</div>
+        <div id="instruction">HOLD CLICK TO GRAPPLE</div>
+    </div>
+
+    <div id="start-screen">
+        <h1>GRAPPLE</h1>
+        <p class="subtitle">CYBERPUNK DRIFT</p>
+        <button id="start-btn">PLAY</button>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+        <h1>WIPEOUT</h1>
+        <p id="final-score">Distance: 0m</p>
+        <div id="replay-container">
+            <video id="replay-video" controls playsinline loop></video>
+        </div>
+        <button id="restart-btn">RETRY</button>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
